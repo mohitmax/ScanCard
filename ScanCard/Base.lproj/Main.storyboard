@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4or-tN-26e">
+                                <rect key="frame" x="190" y="61" width="220" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="5H6-qi-Df3"/>
+                                    <constraint firstAttribute="height" constant="30" id="VbZ-WU-7h4"/>
+                                    <constraint firstAttribute="width" constant="220" id="fhu-bO-DjV"/>
+                                    <constraint firstAttribute="height" constant="30" id="tga-d5-qfa"/>
+                                </constraints>
+                                <state key="normal" title="Scan Credit Card"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="VbZ-WU-7h4"/>
+                                        <exclude reference="fhu-bO-DjV"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="scanCard:" destination="BYZ-38-t0r" eventType="touchDown" id="why-80-yDl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmP-bu-3Ge">
+                                <rect key="frame" x="190" y="159" width="220" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="220" id="6i6-lt-sbs"/>
+                                    <constraint firstAttribute="width" constant="220" id="8HC-bA-u4h"/>
+                                    <constraint firstAttribute="height" constant="145" id="FkX-cW-9MG"/>
+                                    <constraint firstAttribute="height" constant="160" id="adf-on-UPI"/>
+                                    <constraint firstAttribute="width" constant="43" id="vAb-4h-wEu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="6i6-lt-sbs"/>
+                                        <exclude reference="FkX-cW-9MG"/>
+                                        <exclude reference="vAb-4h-wEu"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bmP-bu-3Ge" firstAttribute="top" secondItem="4or-tN-26e" secondAttribute="bottom" constant="68" id="3wX-Tj-PpJ"/>
+                            <constraint firstItem="4or-tN-26e" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="41" id="42a-Tz-OJe"/>
+                            <constraint firstItem="bmP-bu-3Ge" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5sj-tD-8JD"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bmP-bu-3Ge" secondAttribute="bottom" constant="419" id="JXU-9r-5GU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4or-tN-26e" secondAttribute="trailing" constant="137" id="SRh-zL-N2L"/>
+                            <constraint firstItem="4or-tN-26e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="138" id="Vib-EX-ErF"/>
+                            <constraint firstItem="4or-tN-26e" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="41" id="arN-iR-vyy"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bmP-bu-3Ge" secondAttribute="bottom" constant="281" id="dED-cS-Eh9"/>
+                            <constraint firstItem="bmP-bu-3Ge" firstAttribute="top" secondItem="4or-tN-26e" secondAttribute="bottom" constant="68" id="dSB-Bk-3K4"/>
+                            <constraint firstItem="4or-tN-26e" firstAttribute="centerX" secondItem="bmP-bu-3Ge" secondAttribute="centerX" id="dmM-ar-n1F"/>
+                            <constraint firstItem="4or-tN-26e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="end-ub-9xp"/>
+                            <constraint firstItem="4or-tN-26e" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="41" id="wdP-uN-EC0"/>
+                            <constraint firstItem="bmP-bu-3Ge" firstAttribute="leading" secondItem="4or-tN-26e" secondAttribute="leading" id="zth-Mh-j3b"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="42a-Tz-OJe"/>
+                                <exclude reference="SRh-zL-N2L"/>
+                                <exclude reference="Vib-EX-ErF"/>
+                                <exclude reference="dmM-ar-n1F"/>
+                                <exclude reference="end-ub-9xp"/>
+                                <exclude reference="wdP-uN-EC0"/>
+                                <exclude reference="3wX-Tj-PpJ"/>
+                                <exclude reference="JXU-9r-5GU"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="320" height="480"/>
+                    <connections>
+                        <outlet property="cardInfoLabel" destination="bmP-bu-3Ge" id="HFG-il-p8K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="278" y="339"/>
+        </scene>
+    </scenes>
+</document>
